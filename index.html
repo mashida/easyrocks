@@ -3,22 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Two Words Layout</title>
+<title>Responsive Full Width Words</title>
 <style>
+  /* Remove default margins */
   body, html {
     margin: 0;
     height: 100%;
+    width: 100%; /* Ensure full width */
   }
+  
   .half-screen {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%; /* Full width */
     height: 50vh; /* Half of the viewport height */
     background-color: #f0f0f0; /* Optional: adds a background color */
   }
+  
   .word {
     font-size: 5vw; /* Adjusts font size based on viewport width */
+    width: 100%; /* Ensure text spans full width */
+    text-align: center; /* Center text within div */
   }
 </style>
 </head>
