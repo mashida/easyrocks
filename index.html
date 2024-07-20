@@ -12,6 +12,21 @@ h1 {
 p {
 	text-align:center;
 }
+
+.links {
+    text-align: center; /* Centers the content inside the div */
+  }
+  
+  .links a {
+    display: inline-block; /* Allows setting margin on inline elements */
+    margin-right: 10px; /* Space between links */
+    text-decoration: none; /* Removes underline from links */
+    color: blue; /* Sets link color */
+  }
+  
+  .links a:last-child {
+    margin-right: 0; /* Removes margin from the last link */
+  }
 </style>
 
 <head>
@@ -22,5 +37,11 @@ p {
 <h1>e0x web page</h1>
 <p><a href="specs.html">Specs must be</a></p>
 <p><a href="pidarasy.html">Never work with them</a></p>
+
+<div class="links">
+    <a href="https://www.youtube.com/@tradingRampage">YouTube</a>
+    <a href="https://x.com/nikitaserditov">x</a>
+  </div>
+
 </body>
 </html>
