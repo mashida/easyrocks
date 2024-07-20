@@ -3,12 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Specifications must be</title>
+<title>Responsive Full Screen Words</title>
 <style>
-  /* Remove default margins */
-  body, html {
+  /* Reset default margins and paddings */
+  *, *::before, *::after {
     margin: 0;
-    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100vh; /* Cover full viewport height */
     width: 100%; /* Ensure full width */
   }
   
@@ -25,6 +30,9 @@
     font-size: 5vw; /* Adjusts font size based on viewport width */
     width: 100%; /* Ensure text spans full width */
     text-align: center; /* Center text within div */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
   }
 </style>
 </head>
