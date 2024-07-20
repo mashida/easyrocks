@@ -1,49 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Full Screen Words</title>
 <style>
-  /* Reset default margins and paddings */
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body, html {
-    height: 100vh; /* Cover full viewport height */
-    width: 100%; /* Ensure full width */
-  }
-  
-  .half-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Full width */
-    height: 50vh; /* Half of the viewport height */
-    background-color: #f0f0f0; /* Optional: adds a background color */
-  }
-  
-  .word {
-    font-size: 5vw; /* Adjusts font size based on viewport width */
-    width: 100%; /* Ensure text spans full width */
-    text-align: center; /* Center text within div */
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
-  }
+h1 {
+    text-align:center;
+    font-size: 15vw;
+}
 </style>
-</head>
+
 <body>
-
-<div class="half-screen">
-  <span class="word">Explicit</span>
-</div>
-<div class="half-screen">
-  <span class="word">Unequivocal</span>
-</div>
-
+<h1 >EXPLICIT</h1>
+<h1 >UNEQUIVOCAL</h1>
 </body>
 </html>
